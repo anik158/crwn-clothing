@@ -37,9 +37,9 @@
   }
 }
 
-.categories-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.categories-container{
+  max-width: 1800px;
+  margin: 0 auto;
 }
+
+
