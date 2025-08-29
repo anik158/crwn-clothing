@@ -1,0 +1,40 @@
+.sign-in-container{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input[type=email], input[type=password] {
+        border: none;
+        padding: 6px 8px;
+        font-size: 25px;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 10px;
+        }
+
+        input[type="text"]:focus,input[type=email]:focus, input[type=password]:focus {
+        border: none;
+        border-bottom: 2px solid #000000;
+        box-sizing: border-box;
+        outline: none;
+        transition: border-bottom 0.3s ease;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+      gap: 5px;
+    }
+}

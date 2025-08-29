@@ -1,0 +1,30 @@
+.button-container{
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 50%;
+  height: 50px;
+}
+
+.btn--google{
+  background-color: #4285f4;
+  color: white;
+
+
+  &:hover{
+    background-color: #357ae8;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.btn--base{
+    background-color: black;
+    color: white;
+
+    &:hover{
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        cursor: pointer;
+    }
+}
