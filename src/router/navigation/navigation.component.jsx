@@ -1,9 +1,14 @@
 import {Outlet, Link} from "react-router-dom";
 import { Fragment } from "react/jsx-runtime";
+import {useContext} from "react";
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import './navigation.style.scss';
+import { UserContext } from "../../contexts/user.context.jsx";
 
 const Navigation = () => {
+
+    const {currentUser} = useContext(UserContext);
+    console.log('Current User:', currentUser);
   return (
     <Fragment>
       <div className="navigation-containers">
