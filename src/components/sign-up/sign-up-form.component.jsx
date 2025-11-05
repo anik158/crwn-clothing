@@ -14,7 +14,7 @@ const defaultFormFields = {
 const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
-    const {setCurrentUser} = useContext(UserContext);
+
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormFields({ ...formFields, [name]: value });
@@ -32,7 +32,6 @@ const SignUpForm = () => {
             const response = await createAuthUserWithEmailAndPassword(email, password);
 
             const { user } = response;
-            setCurrentUser(user);
             if (!response) {
                 throw new Error('Failed to create user');
             }
